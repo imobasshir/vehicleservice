@@ -38,11 +38,11 @@ python manage.py createsuperuser
 - Admin can see all service cost of request (both approved and pending)
 - Admin can see feedbacks sent by customer/mechanic
 ---
-### Other Features
+<!-- ### Other Features
 - we can change theme of website day(white) and night(black)
-- if customer is deleted by admin then their request(Enquiry) will be deleted automatically
+- if customer is deleted by admin then their request(Enquiry) will be deleted automatically -->
 
-## HOW TO RUN THIS PROJECT
+<!-- ## HOW TO RUN THIS PROJECT
 - Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
@@ -61,9 +61,9 @@ python manage.py runserver
 ```
 http://127.0.0.1:8000/
 http://localhost:8000/
-```
+``` -->
 
-## CHANGES REQUIRED FOR CONTACT US PAGE
+<!-- ## CHANGES REQUIRED FOR CONTACT US PAGE
 - In settins.py file, You have to give your email and password
 ```
 EMAIL_HOST_USER = 'youremail@gmail.com'
@@ -72,16 +72,8 @@ EMAIL_RECEIVING_USER = 'youremail@gmail.com'
 ```
 - Login to gmail through host email id in your browser and open following link and turn it ON
 ```
-https://myaccount.google.com/lesssecureapps
+https://myaccount.google.com/lesssecureapps -->
 ```
-## Drawbacks/LoopHoles
-- When customer/mechanic edit their profile then he/she must login again because their username/password is updated in db.
-## Credits
-- Tran Anh Tuat ( Admin Dashboard UI )
-## Disclaimer
-This project is developed for demo purpose and it's not supposed to be used in real application.
+<!-- ## Drawbacks/LoopHoles
+- When customer/mechanic edit their profile then he/she must login again because their username/password is updated in db. -->
 
-## Feedback
-Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/sumit.luv)
-- [Subscribe my Channel LazyCoder On Youtube](https://youtube.com/lazycoders)
