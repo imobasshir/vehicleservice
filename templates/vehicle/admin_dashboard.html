@@ -10,7 +10,7 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-primary">
 					<p>
-						<i class="fas fa-users"></i>
+						{% comment %} <i class="fas fa-users"></i> {% endcomment %}
 					</p>
 					<h3>{{total_customer}}</h3>
 					<p>Total Customer</p>
@@ -19,7 +19,7 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-warning">
 					<p>
-						<i class="fas fa-hat-cowboy"></i>
+						{% comment %} <i class="fas fa-hat-cowboy"></i> {% endcomment %}
 					</p>
 					<h3>{{total_mechanic}}</h3>
 					<p>Total Mechanic</p>
@@ -28,13 +28,13 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-success">
 					<p>
-						<i class="fas fa-spinner"></i>
+						{% comment %} <i class="fas fa-spinner"></i> {% endcomment %}
 					</p>
 					<h3>{{total_request}}</h3>
 					<p>Total Enquiry</p>
 				</div>
 			</div>
-			<div class="col-3 col-m-6 col-sm-6">
+			{% comment %} <div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-danger">
 					<p>
 						<i class="fas fa-comments"></i>
@@ -42,7 +42,7 @@
 					<h3>{{total_feedback}}</h3>
 					<p>Total Feedback</p>
 				</div>
-			</div>
+			</div> {% endcomment %}
 		</div>
 <!-- ****** cards end ********** -->
 

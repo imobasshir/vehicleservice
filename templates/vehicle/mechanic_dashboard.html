@@ -10,7 +10,7 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-primary">
 					<p>
-						<i class="fas fa-tasks"></i>
+						{% comment %} <i class="fas fa-tasks"></i> {% endcomment %}
 					</p>
 					<h3>{{new_work_assigned}}</h3>
 					<p>New Work Assigned</p>
@@ -19,7 +19,7 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-warning">
 					<p>
-						<i class="fas fa-spinner"></i>
+						{% comment %} <i class="fas fa-spinner"></i> {% endcomment %}
 					</p>
 					<h3>{{work_in_progress}}</h3>
 					<p>Work In Progress</p>
@@ -28,7 +28,7 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-success">
 					<p>
-						<i class="fas fa-check-circle"></i>
+						{% comment %} <i class="fas fa-check-circle"></i> {% endcomment %}
 					</p>
 					<h3>{{work_completed}}</h3>
 					<p>Work Completed</p>
@@ -37,14 +37,14 @@
 			<div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-danger">
 					<p>
-						<i class="fas fa-rupee-sign"></i>
+						{% comment %} <i class="fas fa-rupee-sign"></i> {% endcomment %}
 					</p>
 					<h3>{{salary}}</h3>
 					<p>Salary</p>
 				</div>
 			</div>
 		</div><br><br><br><br>
-		<marquee behavior="scroll" direction="left">
+		{% comment %} <marquee behavior="scroll" direction="left">
 		 <img src="{% static "images/ferrari.png" %}" width="120" height="80" alt="ferrari" />
 			<img src="{% static "images/ford.png" %}" width="120" height="80" alt="ford" />
 		 <img src="{% static "images/lambo.png" %}" width="120" height="80" alt="lambo" />
@@ -54,7 +54,7 @@
 		 <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
 		 <img src="{% static "images/rolls.png" %}" width="120" height="80" alt="rolls" />
 		 <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
-	 </marquee>
+	 </marquee> {% endcomment %}
 	 <br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 

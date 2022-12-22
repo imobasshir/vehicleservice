@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(to right, #b92b27, #1565c0)
+    {% comment %} background: linear-gradient(to right, #b92b27, #1565c0) {% endcomment %}
 }
 
 .box {
@@ -161,7 +161,7 @@ a.socialIcon:hover,
                             {% render_field userForm.password class="form-control" placeholder="Password" %}
                               {% render_field customerForm.address class="form-control" placeholder="Address" %}
                                 {% render_field customerForm.mobile class="form-control" placeholder="Mobile" %}
-                                  {% render_field customerForm.profile_pic class="form-control" placeholder="Profile pic" %}
+                                  {% comment %} {% render_field customerForm.profile_pic class="form-control" placeholder="Profile pic" %} {% endcomment %}
 
                      <input type="submit" name="" value="Create">
 
