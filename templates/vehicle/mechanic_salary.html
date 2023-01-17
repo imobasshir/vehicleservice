@@ -3,14 +3,13 @@
 {% load static %}
 	<!-- main content -->
 	<div class="wrapper">
-<br><br>
-    <h1 style="text-align:center;color:blue;">Your Salary : {{mechanic.salary}}</h1><br><br><br>
+    <h2 style="text-align:center;color:#00a1c9;">Your Salary : {{mechanic.salary}}</h2>
 <!-- ****** table  start ********** -->
 		<div class="row">
 			<div class="col-12 col-m-12 col-sm-12">
 				<div class="card">
 					<div class="card-header">
-						<h3 style="color:red; text-align:center" >Vehicles You Have Repaired
+						<h3 style="color:#00a1c9; text-align:center" >Vehicles You Have Repaired
 						</h3>
 
 					</div>
@@ -46,5 +45,6 @@
 <!-- ****** table start ********** -->
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
+{% include "vehicle/footer.html" %}
 	<!-- end main content -->
 {% endblock content %}
