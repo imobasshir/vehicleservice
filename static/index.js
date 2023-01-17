@@ -1,5 +1,6 @@
-const primaryColor = '#4834d4'
-const warningColor = '#f0932b'
+const primaryColor = '#0d6efd'
+const infoColor = '#0dcaf0'
+const warningColor = '#ffc107'
 const successColor = '#6ab04c'
 const dangerColor = '#eb4d4b'
 

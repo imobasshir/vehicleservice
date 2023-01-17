@@ -8,7 +8,7 @@
 <!-- ****** cards start ********** -->
 		<div class="row">
 			<div class="col-3 col-m-6 col-sm-6">
-				<div class="counter bg-primary">
+				<div class="counter bg-warning">
 					<p>
 						{% comment %} <i class="fas fa-tasks"></i> {% endcomment %}
 					</p>
@@ -17,7 +17,7 @@
 				</div>
 			</div>
 			<div class="col-3 col-m-6 col-sm-6">
-				<div class="counter bg-warning">
+				<div class="counter bg-primary">
 					<p>
 						{% comment %} <i class="fas fa-spinner"></i> {% endcomment %}
 					</p>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 			<div class="col-3 col-m-6 col-sm-6">
-				<div class="counter bg-danger">
+				<div class="counter bg-info">
 					<p>
 						{% comment %} <i class="fas fa-rupee-sign"></i> {% endcomment %}
 					</p>
@@ -60,4 +60,5 @@
 
 	</div>
 	<!-- end main content -->
+	{% include "vehicle/footer.html" %}
 {% endblock content %}

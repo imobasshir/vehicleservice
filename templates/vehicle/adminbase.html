@@ -8,25 +8,50 @@
 	<link rel="icon" type="image/png" href="{% static "assets/AT-pro-logo.png" %}"/>
 
 	<!-- Import lib -->
+	{% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> {% endcomment %}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 	<link rel="stylesheet" type="text/css" href="{% static "fontawesome-free/css/all.min.css" %}">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<!-- End import lib -->
 
 	<link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+	<style type="text/css"> 
+		.bg-primary {
+			background: #0d6efd;
+		}
+		
+		.bg-info {
+			background: #0dcaf0;
+		}
+		
+		.bg-success {
+			background: #6ab04c;
+		}
+		
+		.bg-warning {
+			background: #ffc107;
+		}
+		
+		.bg-danger {
+			background: #eb4d4b;
+		}
+	</style>
 </head>
 <body class="overlay-scrollbar">
 	<!-- navbar -->
-	<div class="navbar">
+	<div class="navbar" style="background: #00A1C9">
 		<!-- nav left -->
 		<ul class="navbar-nav">
 			<li class="nav-item">
 				<a class="nav-link">
-					<i class="fas fa-bars" onclick="collapseSidebar()"></i>
+					<span class="material-icons" style="color: rgb(84, 84, 84);" onclick="collapseSidebar()">menu</span>
+					{% comment %} <a onclick="collapseSidebar()"></a>
+					<i class="fas fa-bars" onclick="collapseSidebar()"></i> {% endcomment %}
 				</a>
 			</li>
 			<li class="nav-item">
-				<h3>Mechanics Mitra</h3>
+				<h3 style="color: yellow">Mechanics Mitra</h3>
 			</li>
 		</ul>
 		<!-- end nav left -->
@@ -72,45 +97,42 @@
 
 
 	<!-- sidebar -->
-	<div class="sidebar">
+	<div class="sidebar" style="background: #00A1C9">
 		<ul class="sidebar-nav">
-
+			<br>
 			<li class="sidebar-nav-item">
 				<a href="/admin-dashboard" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-tachometer-alt"></i>
+					<div style="text-align: center;">
+						<span class="material-icons" style="color: rgb(84, 84, 84); border-width: 0px; border-style: solid;"> space_dashboard </span>
 					</div>
-					<span>
-						Dashboard
-					</span>
+					<div><span>Dashboard</span></div>
 				</a>
 			</li>
 
 			<li class="sidebar-nav-item">
 				<a href="/admin-customer" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-users"></i>
+					<div style="text-align: center;">
+						<span class="material-icons" style="color: rgb(84, 84, 84); "> person </span>
 					</div>
-					<span>Customer</span>
+					<div><span>Customer</span></div>
 				</a>
 			</li>
 
 			<li  class="sidebar-nav-item">
 				<a href="/admin-mechanic" class="sidebar-nav-link">
-					<div>
-					<i class="fas fa-hat-cowboy"></i>
-
+					<div style="text-align: center;">
+						<span class="material-icons" style="color: rgb(84, 84, 84);">garage</span>
 					</div>
-					<span>Mechanic</span>
+					<div><span>Mechanics</span></div>
 				</a>
 			</li>
 
 			<li  class="sidebar-nav-item">
 				<a href="/admin-request" class="sidebar-nav-link">
-					<div>
-						<i class="fas fa-spinner"></i>
+					<div style="text-align: center;">
+						<span class="material-icons" style="color: rgb(84, 84, 84);">cached</span>
 					</div>
-					<span>Request</span>
+					<div><span>Request</span></div>
 				</a>
 			</li>
 
