@@ -114,6 +114,21 @@ def admin_dashboard_view(request):
     }
     return render(request,'vehicle/admin_dashboard.html',context=dict)
 
+@login_required(login_url='adminlogin')
+def admin_total_enq(request):
+    enquiry=models.Request.objects.all().order_by('-id')
+    customers=[]
+    for enq in enquiry:
+        customer=models.Customer.objects.get(id=enq.customer_id)
+        customers.append(customer)
+    dict={
+    'total_customer':models.Customer.objects.all().count(),
+    'total_mechanic':models.Mechanic.objects.all().count(),
+    'total_request':models.Request.objects.all().count(),
+    'total_feedback':models.Feedback.objects.all().count(),
+    'data':zip(customers,enquiry),
+    }
+    return render(request,'vehicle/admin-total-enq.html',context=dict)
 
 @login_required(login_url='adminlogin')
 def admin_customer_view(request):

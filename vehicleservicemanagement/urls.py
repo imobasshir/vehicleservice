@@ -61,6 +61,7 @@ urlpatterns = [
     path('admin-take-attendance', views.admin_take_attendance_view,name='admin-take-attendance'),
     path('admin-view-attendance', views.admin_view_attendance_view,name='admin-view-attendance'),
     path('admin-feedback', views.admin_feedback_view,name='admin-feedback'),
+    path('admin-total-enq', views.admin_total_enq,name='admin-total-enq'),
 
     path('admin-report', views.admin_report_view,name='admin-report'),
 

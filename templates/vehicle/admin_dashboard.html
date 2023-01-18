@@ -1,7 +1,14 @@
 {% extends 'vehicle/adminbase.html' %}
 {% load static %}
 {% block content %}
-
+{% comment %} <head>
+	<style type='text/css'>
+		abc, a:link, a:visited {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	</style>
+</head> {% endcomment %}
 	<!-- main content -->
 	<div class="wrapper">
 
@@ -34,6 +41,17 @@
 					<p>Total Enquiry</p>
 				</div>
 			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-primary">
+					<p>
+						{% comment %} <i class="fas fa-spinner"></i> {% endcomment %}
+					</p>
+					<a style="color: #ffffff;text-decoration: none;" href="/admin-total-enq">
+					<h3 class="m-b-20">{{total_request}}</h3>
+					<p>Recent Enquiry</p>
+					</a>
+				</div>
+			</div>
 			{% comment %} <div class="col-3 col-m-6 col-sm-6">
 				<div class="counter bg-danger">
 					<p>
@@ -47,7 +65,7 @@
 <!-- ****** cards end ********** -->
 
 
-<!-- ****** table  start ********** -->
+{% comment %} <!-- ****** table  start ********** -->
 		<div class="row">
 			<div class="col-12 col-m-12 col-sm-12">
 				<div class="card">
@@ -86,9 +104,9 @@
 				</div>
 			</div>
 		</div>
-<!-- ****** table start ********** -->
+<!-- ****** table start ********** --> {% endcomment %}
 
-  <br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
 
 	</div>
 	<!-- end main content -->
