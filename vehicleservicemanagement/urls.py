@@ -80,6 +80,7 @@ urlpatterns = [
     path('customer-dashboard', views.customer_dashboard_view,name='customer-dashboard'),
     path('customer-request', views.customer_request_view,name='customer-request'),
     path('customer-add-request',views.customer_add_request_view,name='customer-add-request'),
+    path('payment-view', views.payment_view,name='payment-view'),
 
     path('customer-profile', views.customer_profile_view,name='customer-profile'),
     path('edit-customer-profile', views.edit_customer_profile_view,name='edit-customer-profile'),
